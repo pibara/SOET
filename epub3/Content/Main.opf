@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package version="3.0"  xml:lang="en" xmlns="http://www.idpf.org/2007/opf"  unique-identifier="pub-id">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+     <dc:title id="title">Put your book title here</dc:title>
+     <meta refines="#title" property="title-type">Put your book title here</meta>
+     <dc:creator id="creator">Put the author name here.</dc:creator>
+     <meta refines="#creator" property="file-as">Familyname, Firstname</meta>
+     <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+     <dc:identifier id="pub-id">isbn:123456789012</dc:identifier>
+     <dc:language>en-US</dc:language>
+     <meta property="dcterms:modified">2015-02-26T00:10:00Z</meta>
+     <dc:publisher>Put the author name here (assuming we are self publishing)</dc:publisher>
+     <dc:rights>All rights reserved.</dc:rights>
+  </metadata>
+  <manifest>
+      <item id="cssstyle" href="style.css" media-type="text/css"/>
+      <item id="font.opendyslexic.regular" href="fonts/OpenDyslexic-Regular.otf" media-type="application/vnd.ms-opentype"/>
+      <item id="frontimg" href="front.jpg"  media-type="image/jpeg"/>
+      <item id="frontpage" href="frontpage.xhtml" media-type="application/xhtml+xml"/>
+      <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+      <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml"/>
+      <item id="chapter01" href="chapter01.xhtml" media-type="application/xhtml+xml"/>
+      <item id="chapter02" href="chapter02.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine>
+      <itemref linear="yes" idref="frontpage"/>
+      <itemref linear="yes" idref="titlepage"/>
+      <itemref linear="yes" idref="chapter01"/>
+      <itemref linear="yes" idref="chapter02"/>
+      <itemref idref="toc" linear="no"/>
+  </spine>
+</package>
