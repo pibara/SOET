@@ -1,9 +1,23 @@
 
 @font-face {
 font-family: 'OpenDyslexic';
-font-weight: normal;
-font-style: normal;
 src:url(fonts/OpenDyslexic-Regular.otf);
+}
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("fonts/OpenDyslexic-Bold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url("fonts/OpenDyslexic-Italic.otf");
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url("fonts/OpenDyslexic-BoldItalic.otf");
+    font-weight: bold;
+    font-style: italic, oblique;
 }
 
 body {
@@ -87,6 +101,19 @@ text-align: center;
 text-transform: uppercase;
 font-weight: normal;
 letter-spacing: 6px;
+}
+
+h3 {
+text-align: center;
+font-size: 24px;
+line-height: 160%;;
+text-align: center;
+padding-bottom: 0em;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 6px;
+font-style: italic;
 }
 
 .title-author-rw {
